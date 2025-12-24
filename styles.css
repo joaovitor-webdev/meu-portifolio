@@ -1,13 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000000;
+    color: #ffffff;
 }
 
 .navbar {
@@ -69,7 +76,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.3rem;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Hanken Grotesk';
 }
 
 .icons-container {
@@ -102,17 +109,11 @@ body {
     display: none;
 }
 
-section {
+.bg {
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 8%;
     overflow: hidden;
 }
 
-/* Blur azul - elemento comum em todas as seções */
 .bg-blur::before {
     content: '';
     position: absolute;
@@ -121,23 +122,12 @@ section {
     background: radial-gradient(circle, rgba(30, 30, 200, 0.4) 0%, rgba(30, 30, 200, 0) 70%);
     border-radius: 50%;
     filter: blur(80px);
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
     top: 70%;
     right: 85%;
     transform: translateY(-50%);
 }
-
-/* Posições alternadas do blur para cada seção
-section::before {
-}
-
-section::before {
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    background: radial-gradient(circle, rgba(80, 30, 200, 0.4) 0%, rgba(80, 30, 200, 0) 70%);
-} */
 
 .dots-container {
     position: absolute;
@@ -178,6 +168,7 @@ section::before {
     align-items: center;
     justify-content: space-around;
     min-height: 100vh;
+    z-index: 2;
 }
 
 .home-banner {
@@ -186,6 +177,7 @@ section::before {
     align-items: center;
     justify-content: center;
     width: 50%;
+    z-index: 2;
 }
 
 .home-title {
@@ -194,7 +186,7 @@ section::before {
     font-weight: 950;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Hanken Grotesk';
 }
 
 .home-subtitle {
@@ -204,13 +196,13 @@ section::before {
     text-decoration: overline;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Hanken Grotesk';
     margin-bottom: 15px;
 }
 
 .contact-btn {
     border: 2px solid #ffffff;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #000000;
     padding: 1rem 1.5rem;
     cursor: pointer;
@@ -227,7 +219,7 @@ section::before {
     text-decoration: none;
     color: #ffffff;
     font-size: 1rem;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Hanken Grotesk';
 }
 
 .home-icons {
@@ -292,4 +284,112 @@ section::before {
 .section2,
 .section3 {
     min-height: 100vh;
+}
+
+.about-container {
+    padding: 6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.section-title {
+    font-family: 'Hanken Grotesk';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 950;
+    padding: 30px;
+}
+
+.about-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-code {
+    width: 50%;
+    margin: 20px;
+    background: rgba(5, 1, 67, 0.26);
+    border: 1px solid rgba(56, 63, 255, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    font-family: 'Fira Code';
+    font-size: 1.1rem;
+    color: #1900ff;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.about-code:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px 4px rgba(4, 0, 89, 0.52);
+    background: #000000;
+}
+
+.code-line {
+    margin-bottom: 8px;
+}
+
+.code-line.indent {
+    margin-left: 20px;
+}
+
+.about-desc {
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-desc {
+    font-size: 1.2rem;
+    font-family: 'Hanken Grotesk';
+    padding: 5px;
+}
+
+.skills h3 {
+    font-family: 'Hanken Grotesk';
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    font-family: 'Fira Code';
+    background: rgba(56, 69, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(56, 56, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #1900ff;
+    transform: scale(1.05);
+}
+
+.curriculum-container {
+    padding: 6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 2;
 }
