@@ -83,6 +83,45 @@
                         </li>
                     </ul>
                 </div>
+                <button id="mobile_btn" class="mobile-btn"
+                    aria-label="Abrir menu" aria-expanded="false"
+                    aria-controls="mobile_menu">
+                    <span class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+                <div id="mobile_menu" class="mobile-menu" aria-hidden="true">
+                    <ul class="mobile-links-list">
+                        <li><a href="#home" class="mobile-link">Início</a></li>
+                        <li><a href="#about" class="mobile-link">Sobre
+                                mim</a></li>
+                        <li><a href="#projects"
+                                class="mobile-link">Projetos</a></li>
+                        <li><a href="#contact"
+                                class="mobile-link">Contato</a></li>
+                    </ul>
+                    <ul class="mobile-icons-list">
+                        <li><a
+                                href="https://www.linkedin.com/in/joaovitor-webdev/"
+                                class="navbar-icon"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/joaovitor-webdev"
+                                class="navbar-icon"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li><a href class="navbar-icon"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href class="navbar-icon"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://wa.me/5581992718851"
+                                class="navbar-icon"><i
+                                    class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="mailto:joaovitor.webdev@gmail.com"
+                                class="navbar-icon"><i
+                                    class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -153,7 +192,7 @@
                             alt="Foto de Perfil">
                     </div>
                 </div>
-                <script src="./script.js" ></script>
+
             </section>
 
             <section id="about" class="about-container">
@@ -485,8 +524,11 @@
                         </form>
                     </div>
                 </div>
-                <script src="./contact-.js"></script>
+
             </section>
         </main>
+        <script src="./src/scripts/navbar.js"></script>
+        <script src="./src/scripts/typing.js"></script>
+        <script src="./src/scripts/contact-.js"></script>
     </body>
 </html>
