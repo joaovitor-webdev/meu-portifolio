@@ -1,0 +1,62 @@
+@import url(../navbar.css);
+
+@media screen and (max-width: 768px) {
+
+    .navbar-container .links-container,
+    .navbar-container .icons-container {
+        display: none;
+    }
+
+    .navbar {
+        overflow: hidden;
+    }
+
+    .navbar .mobile-menu-icon {
+        width: 20%;
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        border: none;
+        background: transparent;
+        text-decoration: none;
+    }
+
+    .mobile-menu-icon button i {
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar .navbar-container {
+        justify-content: space-between;
+        margin: 0 20px;
+        padding-bottom: 0;
+    }
+
+    .navbar .mobile-menu {
+        position: sticky;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999999;
+    }
+
+    .mobile-links-container .links-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mobile-icons-container {
+        margin-bottom: 1rem;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+}

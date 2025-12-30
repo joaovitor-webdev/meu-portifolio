@@ -1,0 +1,53 @@
+@import url(../home.css);
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3.5rem;
+    }
+
+    .home-container .home-banner {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .home-container .home-title {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .home-container .home-subtitle {
+        font-size: 2rem;
+    }
+
+    .home-container .home-desc {
+        width: 100%;
+        padding: 5px;
+        height: 70px;
+    }
+
+    .home-container .typing-container {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .home-desc .typing-text {
+        font-size: 1.3rem;
+    }
+
+    .home-container .contact-link {
+        font-size: 1.2rem;
+    }
+
+    .home-container .img-container {
+        width: 50%;
+    }
+
+    .home-container .home-img {
+        width: 50%px;
+        height: 50%;
+    }
+}

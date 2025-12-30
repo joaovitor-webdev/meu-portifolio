@@ -1,0 +1,20 @@
+@import url(../about.css);
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    .about-container .about-banner {
+        flex-direction: column;
+        gap: 30px;
+        padding: 3rem 0;
+    }
+
+    .about-container .section-title {
+        font-size: 1.7rem;
+        margin-top: 8.5rem;
+    }
+
+    .about-banner .about-code,
+    .about-banner .about-desc {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}

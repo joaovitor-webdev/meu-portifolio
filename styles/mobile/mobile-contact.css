@@ -1,0 +1,12 @@
+@import url(../contact.css);
+
+@media screen and (max-width: 768px) {
+    .contact-container .section-title {
+        font-size: 1.3rem;
+        
+    }
+
+    .contact-container .form-container {
+        padding: 0 1rem;
+    }
+}

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deletingSpeed = 50;
     const pauseTime = 1000;
 
-    const typingElement = document.getElementById('typingText');
+    const typingElement = document.querySelector('.typing-text');
     if (!typingElement) return;
 
     function type() {

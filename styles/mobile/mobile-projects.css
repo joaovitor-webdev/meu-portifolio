@@ -1,0 +1,29 @@
+@import url(../projects.css);
+
+@media screen and (max-width: 768px) {
+
+    .projects-container .section-title {
+        font-size: 1.3rem;
+        margin-top: 3rem;
+    }
+
+    .projects-container .projects-grid {
+        padding: 0 1rem;
+    }
+
+    .project-card .project-title {
+        font-size: 1.4rem;
+    }
+
+    .project-card .project-description {
+        font-size: 1.2rem;
+    }
+
+    .project-card .btn {
+        font-size: .7rem;
+    }
+
+    .projects-container .contact-link {
+        font-size: 1.2rem;
+    }
+}

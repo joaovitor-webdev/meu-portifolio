@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+
+@import url(./navbar.css);
+@import url(./home.css);
+@import url(./about.css);
+@import url(./projects.css);
+@import url(./contact.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.contact-btn {
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    background-color: #000000;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: 15px;
+}
+
+.contact-btn:hover {
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+#bg_home1::before {
+    content: '';
+    position: fixed;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(30, 30, 200, 0.4) 0%, rgba(30, 30, 200, 0) 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    top: 70%;
+    right: 90%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 0;
+}
+
+#bg_home2::before {
+    content: '';
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(30, 30, 200, 0.4) 0%, rgba(30, 30, 200, 0) 70%);
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    bottom: 60%;
+    left: 95%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 950;
+    padding: 30px;
+}

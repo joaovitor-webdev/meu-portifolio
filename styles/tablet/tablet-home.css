@@ -1,0 +1,32 @@
+@import url(../home.css);
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    
+    .home-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home-container .home-banner, 
+    .home-container .img-container {
+        width: 100%;
+    }
+
+    .home-container .home-title {
+        font-size: 6rem;
+        margin-top: 8.5rem;
+    }
+
+    .home-container .home-subtitle {
+        font-size: 3.5rem;
+    }
+
+    .home-container .typing-text {
+        font-size: 1.3rem;
+    }
+
+    .img-container .home-img {
+        width: 300px;
+        height: 300px;
+    }
+}

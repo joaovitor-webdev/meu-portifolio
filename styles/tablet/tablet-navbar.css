@@ -1,0 +1,23 @@
+@import url(../navbar.css);
+
+@media screen and (min-width: 768px) and (max-width: 1124px) {
+    .navbar-container .links-container {
+        display: none;
+    }
+
+    .navbar .mobile-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+    }
+
+    .mobile-menu .mobile-links-container {
+        margin: 10px;
+        align-items: center;
+    }
+
+    .navbar .mobile-menu .mobile-icons-container {
+        display: none;
+    }
+}

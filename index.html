@@ -9,7 +9,12 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
             integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <!-- <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/home.css">
+        <link rel="stylesheet" href="./styles/about.css">
+        <link rel="stylesheet" href="./styles/projects.css">
+        <link rel="stylesheet" href="./styles/contact.css"> -->
         <title>João Vitor | Web Dev</title>
     </head>
     <body>
@@ -49,29 +54,99 @@
                         <li class="icon-item">
                             <a
                                 href="https://www.linkedin.com/in/joaovitor-webdev/"
+                                target="_blank"
                                 class="navbar-icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </li>
                         <li class="icon-item">
                             <a href="https://github.com/joaovitor-webdev"
-                                class="navbar-icon">
+                                target="_blank" class="navbar-icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
                         <li class="icon-item">
-                            <a href class="navbar-icon">
+                            <a href target="_blank" class="navbar-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="icon-item">
+                            <a href="https://wa.me/5581992718851"
+                                target="_blank" class="navbar-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a href="mailto:joaovitor.webdev@gmail.com"
+                                target="_blank"
+                                class="navbar-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="mobileMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <div class="mobile-links-container">
+                    <ul id="links_list" class="links-list">
+                        <li class="link-item">
+                            <a href="#home" class="navbar-link"
+                                onclick="mobileMenu()">
+                                Início
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#about" class="navbar-link"
+                                onclick="mobileMenu()">
+                                Sobre mim
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#projects" class="navbar-link"
+                                onclick="mobileMenu()">
+                                Projetos
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#contact" class="navbar-link"
+                                onclick="mobileMenu()">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-icons-container">
+                    <ul class="icons-list">
+                        <li class="icon-item">
+                            <a
+                                href="https://www.linkedin.com/in/joaovitor-webdev/" target="_blank"
+                                class="navbar-icon" onclick="mobileMenu()">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a href="https://github.com/joaovitor-webdev"
+                                target="_blank" class="navbar-icon"
+                                onclick="mobileMenu()">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a href class="navbar-icon" onclick="mobileMenu()">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li class="icon-item">
-                            <a href class="navbar-icon">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="icon-item">
                             <a href="https://wa.me/5581992718851"
-                                class="navbar-icon">
+                                class="navbar-icon" onclick="mobileMenu()">
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
                         </li>
@@ -83,48 +158,12 @@
                         </li>
                     </ul>
                 </div>
-                <button id="mobile_btn" class="mobile-btn"
-                    aria-label="Abrir menu" aria-expanded="false"
-                    aria-controls="mobile_menu">
-                    <span class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </span>
-                </button>
-                <div id="mobile_menu" class="mobile-menu" aria-hidden="true">
-                    <ul class="mobile-links-list">
-                        <li><a href="#home" class="mobile-link">Início</a></li>
-                        <li><a href="#about" class="mobile-link">Sobre
-                                mim</a></li>
-                        <li><a href="#projects"
-                                class="mobile-link">Projetos</a></li>
-                        <li><a href="#contact"
-                                class="mobile-link">Contato</a></li>
-                    </ul>
-                    <ul class="mobile-icons-list">
-                        <li><a
-                                href="https://www.linkedin.com/in/joaovitor-webdev/"
-                                class="navbar-icon"><i
-                                    class="fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/joaovitor-webdev"
-                                class="navbar-icon"><i
-                                    class="fa-brands fa-github"></i></a></li>
-                        <li><a href class="navbar-icon"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href class="navbar-icon"><i
-                                    class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="https://wa.me/5581992718851"
-                                class="navbar-icon"><i
-                                    class="fa-brands fa-whatsapp"></i></a></li>
-                        <li><a href="mailto:joaovitor.webdev@gmail.com"
-                                class="navbar-icon"><i
-                                    class="fa-regular fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
+
         </header>
 
+        <div id="bg_home1"></div>
+        <div id="bg_home2"></div>
         <main>
             <section id="home" class="home-container">
                 <div class="home-banner">
@@ -136,7 +175,7 @@
                     </h2>
                     <div class="home-desc">
                         <div class="typing-container">
-                            <span class="typing-text" id="typingText"></span>
+                            <span class="typing-text"></span>
                             <span class="cursor"></span>
                         </div>
                     </div>
@@ -167,11 +206,6 @@
                                 </a>
                             </li>
                             <li class="home-icon-item">
-                                <a href class="home-icon-link">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="home-icon-item">
                                 <a href="https://wa.me/5581992718851"
                                     class="home-icon-link">
                                     <i class="fa-brands fa-whatsapp"></i>
@@ -192,10 +226,11 @@
                             alt="Foto de Perfil">
                     </div>
                 </div>
-
             </section>
 
             <section id="about" class="about-container">
+                <!-- <div id="bg_about1"></div>
+                <div id="bg_about2"></div> -->
                 <div class="section-title">
                     <h1 class="about-title">
                         Sobre mim
@@ -203,7 +238,7 @@
                 </div>
                 <div class="about-banner">
                     <div class="about-code">
-                        <code>
+                        <div class="code-container">
                             <div class="code-line">const webDeveloper =
                                 {</div>
                             <div class="code-line indent">name:
@@ -216,11 +251,11 @@
                                 skills and discovering new ways to
                                 innovate'</div>
                             <div class="code-line">};</div>
-                        </code>
+                        </div>
                     </div>
                     <div class="about-desc">
                         <p class="text-desc">
-                            Meu nome é João Vitor. Sou desenvolvedor web e
+                            Meu nome é João Vitor. Sou Desenvolvedor Web e
                             Técnico em Desenvolvimento de Sistemas, com foco
                             em
                             criar soluções eficientes para web e
@@ -450,15 +485,15 @@
                     <h1>Contato</h1>
                 </div>
                 <div class="contact-tabs">
-                    <button class="tab-btn" data-tab="whatsapp"
+                    <button class="tab-btn active" data-tab="whatsapp"
                         onclick="switchTab('whatsapp')">WhatsApp</button>
-                    <button class="tab-btn active" data-tab="email"
+                    <button class="tab-btn" data-tab="email"
                         onclick="switchTab('email')">E-mail</button>
                 </div>
 
                 <div class="form-container">
                     <!-- Formulário WhatsApp -->
-                    <div id="whatsapp-form" class="tab-content">
+                    <div id="whatsapp-form" class="tab-content active">
                         <h2 class="form-title">Solicitar orçamento</h2>
                         <form onsubmit="sendWhatsApp(event)">
                             <div class="form-group">
@@ -492,7 +527,7 @@
                     </div>
 
                     <!-- Formulário E-mail -->
-                    <div id="email-form" class="tab-content active">
+                    <div id="email-form" class="tab-content">
                         <h2 class="form-title">Solicitar orçamento</h2>
                         <form onsubmit="sendEmail(event)">
                             <div class="form-group">
@@ -527,6 +562,7 @@
 
             </section>
         </main>
+
         <script src="./src/scripts/navbar.js"></script>
         <script src="./src/scripts/typing.js"></script>
         <script src="./src/scripts/contact-.js"></script>
