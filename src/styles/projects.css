@@ -22,6 +22,7 @@
 .project-card {
     width: 100%;
     max-width: 450px;
+    height: 100%;
     background: linear-gradient(180deg, rgba(6, 8, 30, 0.92), rgba(3, 3, 7, 0.8));
     border-radius: 18px;
     overflow: hidden;
@@ -42,7 +43,7 @@
 
 .project-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     background: linear-gradient(135deg, #0b122b 0%, #06102b 100%);
@@ -72,10 +73,13 @@
 
 .project-description {
     color: rgba(191, 199, 255, 0.9);
-    font-size: clamp(0.9rem, 1.4vw, 1rem);
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 18px;
     max-width: 95%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
 }
 
 .project-tags {
@@ -85,6 +89,7 @@
     margin-bottom: 18px;
     align-items: center;
     justify-content: center;
+    min-height: 75px;
 }
 
 .tag {
